@@ -1,0 +1,152 @@
+
+  .c-topbanner{
+    // padding: 100px 50px 80px;
+    padding: 120px 0 50px;;
+    // overflow-x: scroll;
+    transition: .3s,border .3s,border-radius .3s,box-shadow .3s;
+
+    .main-banner{
+        display: flex;
+        width: 100%;
+
+        .left-banner{
+            width: 50%;
+            padding: 0 50px 0 100px;
+            h1{
+                color: #2c5766;
+                font-size: 40px;
+                margin-bottom: 20px;
+                span{
+                    text-decoration: underline;
+                    text-decoration-color: #f1bb15;
+                    text-underline-offset: 5px ;
+                }
+            }
+            p{
+                font-size: 18px;
+               padding: 20px 20px 30px 0px;
+               color: #6B6B6B;
+            }
+            .started-btn{
+                border-radius: 6px;
+                color: #fff;
+                padding: 16px 20px;
+                background-image: linear-gradient(to right, #3b7989 51%, #2c5766 100%);
+
+                span{
+                    margin-left: 10px;
+                }
+
+            }
+        }
+        .right-banner{
+            width: 50%;
+            position: relative;
+          
+            .carousel-slider {
+                display: flex;
+                width: 100%;
+                position: relative;
+             
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
+
+                
+         
+                  .slick-track {
+                    display: flex;
+                    align-items: center;
+                  }
+                
+                .slick-slide {
+                  width: 216.333px !important;
+                   margin-right: 20px;
+                    img{
+                        width: 100%;
+                        border-radius: 7px;
+                       
+                    }
+
+                    .slick-track{
+                      display: flex;
+                      align-items: center;
+                    }
+                  }
+                
+                .slick-list {
+                   margin: 20px 0px;
+                  
+                }
+                
+                .slick-prev,
+                .slick-next {
+                  position: absolute;
+                  right: 10%;
+                //   background: rgb(238, 20, 20);
+                  border: none;
+                  color: transparent;
+                  width: 30px;
+                  height: 30px;
+                 
+                  &:before { 
+                    content: ">" ; 
+                    // color: hsla(0,0%,93.3%,.9); 
+                    color: #e2e8f0;
+                    font-weight: 600;
+                    font-size: 28px;
+                  }
+                }
+                
+                .slick-prev { 
+                  left: 10%; 
+                  z-index: 1;
+                  &:before {
+                     content: "<";
+                      // color: hsla(0,0%,93.3%,.9);
+                      color: #e2e8f0;
+                      font-weight: 600;
+                      font-size: 28px;
+                  
+                     }
+                }
+                
+                // .slick-dots {
+                //   list-style: none;
+                //   margin: 0 auto;
+                //   text-align: center;
+                  
+                //   li {
+                //     display: inline-block;
+                    
+                //     button { 
+                //       transition: 0.2s background-color ease-in-out 0s;
+                //       border: none;
+                //       padding: 0;
+                //       color: transparent;
+                //       width: 10px;
+                //       height: 10px;
+                //       background-color: #777;
+                //       margin-right: 10px;
+                //       border-radius: 50%; 
+                //     }
+              
+                //      &.slick-active button { background-color: #fff; }
+                //   }
+                // }
+
+                
+               
+
+             
+
+              }
+           
+        }
+    }
+
+  }
+
+
+
+

@@ -1,0 +1,121 @@
+.marketing-solution{
+
+    padding: 50px 0;
+    background-color: #f5f5f5;
+
+    .container{
+        .c-cardbox{
+            // h2{
+            //     color: #2c5766;
+            //     text-align: center;
+            //     font-size: 40px;
+            //     margin-bottom: 20px;
+            //     font-weight: 700;
+            //     font-family: $nunitofnt;
+            //     line-height: 1.2;
+            //     text-transform: capitalize;
+            // }
+            p{
+                margin-bottom: 16px; 
+                font-size: 18px;
+                font-family: $nunitofnt;
+                text-align: center;
+                color: #6B6B6B;
+                font-weight: 500;
+            }
+        
+            .cardbox-detail{
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 50px;
+                li{
+                    padding: 0 40px 0 0;
+                    width: 33.33%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    .card-img{
+                        margin-bottom: 10px;
+                        a{
+                            img{
+                                height: 250px;
+                                width: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                    h4{
+                        text-align: center;
+                        color: #3c7385;
+                        font-size: 24px;
+                        font-family: $nunitofnt;
+                        text-transform: capitalize;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+            
+           
+                    }
+                    p{
+                        margin-bottom: 20px;
+                        text-align: center;
+                        font-size: 18px;
+                        font-family: $nunitofnt;
+                        color: #6B6B6B;
+                        font-weight: 500;
+        
+                    }
+                    .know-btn{
+                        font-weight: 600;
+                        color: #000;
+                        background-color: #ffc838;
+                        padding: 14px 20px;
+                        font-size: 16px;
+                        line-height: 1;
+                        font-family: $nunitofnt;
+                        text-transform: capitalize;
+                        letter-spacing: 0.5px;
+                        text-align: center;
+                        border-radius: 6px;
+                        
+                    }
+                }
+            }
+            
+        }
+
+
+        .campaign-btn{
+            padding: 50px 0 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            button{
+                // background-color: #2c5766;
+                color: #fff;
+                font-size: 18px;
+                text-transform: capitalize;
+             
+                background-image:linear-gradient(to left, #4b9cad 15%, #1d3543 100%);
+                padding: 14px 20px; 
+                border-radius: 6px;
+                border: none;
+                font-family: $nunitofnt;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                
+
+                span{
+                    margin-left: 10px;
+                    font-size: 20px;
+                }
+
+                
+            }
+        }
+    }
+
+    
+
+}

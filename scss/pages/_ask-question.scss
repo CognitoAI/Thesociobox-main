@@ -1,0 +1,105 @@
+.p-question{
+    padding: 80px 50px;
+    margin: 0 40px;
+
+    .question-list{
+        padding: 30px;
+     
+        background-color: #fff;
+        // box-shadow: 0 10px 20px 0 rgb(0 0 0 / 0.7);
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+
+        .question-card{
+            // background-color: #122B19;
+            cursor: pointer;
+            .question-title{
+                color: #6B6B6B;
+                font-family:$nunitofnt;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 27px;
+                
+                // cursor: pointer;
+                display: block;
+                padding: 15px 20px;
+                position: relative;
+                text-align: left;
+
+
+                // &::before{
+                //     width: 8px;
+                //     height: 8px;
+                //     border: 3px solid #6B6B6B;
+                //     transform: rotate(135deg) translateY(50%);
+
+                //     border-bottom: none;
+                //     border-right: none;
+                //     top: 50%;
+                //     position: absolute;
+                //     right: 10px;
+                //     content: " ";
+                //     font-weight: 700;
+                //     transition: all 0.2s ease-in-out;
+                // }
+                
+
+
+                &::after{
+                 
+                    width: 8px;
+                    height: 8px;
+                    border: 3px solid #6B6B6B;
+                    transform: rotate(135deg) translateY(50%);
+
+                    border-bottom: none;
+                    border-right: none;
+                    top: 50%;
+                    position: absolute;
+                    right: 10px;
+                    content: " ";
+                    font-weight: 700;
+                    transition: all 0.2s ease-in-out;
+                    // transform: rotate(-135deg) translateY(50%);
+                }
+                &::before {
+                    display: none;
+                }
+                &.active {
+                    color:#4b9cad;
+                    &::after {
+                        border-color: #4b9cad;
+                        transform: rotate(225deg) translateY(50%);
+                    }
+                }
+            }
+
+            .answer-title{
+                display: none;
+                margin: 0;
+                text-align: left;
+              
+                padding: 15px 20px;
+                p{
+                   
+                    text-align: left;
+                    font-weight: 400;
+                    font-family: $nunitofnt;
+                    padding: 15px 20px;
+                    margin-bottom: 18px;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    color: #6B6B6B;
+                    // font-style: italic;
+                }
+               
+            
+            
+            
+            
+            }
+        }
+        
+
+    }
+
+}

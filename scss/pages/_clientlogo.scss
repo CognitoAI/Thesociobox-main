@@ -1,0 +1,55 @@
+.p-clientLogo{
+   padding: 0 0 50px ;
+    // transition: .3s,border .3s,border-radius .3s,box-shadow .3s;
+    .container{
+        width: 100%;
+        max-width: 1140px;
+        padding: 0 15px;
+        margin: 0 auto;
+       
+        box-sizing: border-box;
+    }
+    .main-client{
+        width: 100%;
+        padding: 10px;
+       
+      
+        h5{
+            
+            margin: 0;  
+            color: #1a1a1a;    
+            font-family: 'Nunito Sans',sans-serif;
+            text-transform: capitalize;  
+            text-align: center;     
+            font-weight: 700;
+            line-height: 1.6;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .client-carousel{
+            // transform: translate3d(-4063.5px, 0px, 0px);
+            // transition-duration: 0ms;
+            width: 100%;
+
+        .slick-slide{
+            width: 104.125px;
+            margin-right: 40px;
+            text-align: center;
+            flex-shrink: 0;
+            img{
+                width: 100%;
+            }
+           
+        }
+        .slick-list{
+            .slick-track{
+                display: flex;
+                align-items: center;
+            }
+        }
+
+
+        }
+    }
+}
