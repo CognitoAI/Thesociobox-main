@@ -13,6 +13,9 @@ li {
 a {
   text-decoration: none; }
 
+ol, ul {
+  margin: 0 0 24px 48px; }
+
 .wrapper {
   width: 100%; }
 
@@ -69,6 +72,19 @@ a {
   line-height: 1.2;
   text-transform: capitalize; }
 
+.main-container {
+  width: 100%;
+  display: flex;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between; }
+
 .c-topbanner {
   padding: 120px 0 50px;
   transition: .3s,border .3s,border-radius .3s,box-shadow .3s; }
@@ -94,7 +110,8 @@ a {
         border-radius: 6px;
         color: #fff;
         padding: 16px 20px;
-        background-image: linear-gradient(to right, #3b7989 51%, #2c5766 100%); }
+        background-image: linear-gradient(to right, #3b7989 51%, #2c5766 100%);
+        font-weight: 600; }
         .c-topbanner .main-banner .left-banner .started-btn span {
           margin-left: 10px; }
     .c-topbanner .main-banner .right-banner {
@@ -270,7 +287,7 @@ a {
             margin: 26px 0; } }
         .header .navbar .nav-menu .nav-item .nav-link {
           font-size: 20px;
-          font-weight: 400;
+          font-weight: 600;
           color: #1d3543; }
           .header .navbar .nav-menu .nav-item .nav-link:hover {
             color: #3b7989; }
@@ -280,7 +297,7 @@ a {
           padding: 6px 12px; }
           .header .navbar .nav-menu .nav-item:last-child a {
             color: #fff;
-            font-weight: 500; }
+            font-weight: 600; }
             .header .navbar .nav-menu .nav-item:last-child a:hover {
               color: #fff; }
     .header .navbar .showMenu {
@@ -503,7 +520,7 @@ a {
           right: 10px;
           content: " ";
           font-weight: 700;
-          transition: all 0.2s ease-in-out; }
+          transition: all 0.5s ease-in-out; }
         .p-question .question-list .question-card .question-title::before {
           display: none; }
         .p-question .question-list .question-card .question-title.active {
@@ -527,41 +544,159 @@ a {
           color: #6B6B6B; }
 
 .p-designedscale {
-  padding: 50px 45px 80px; }
-  .p-designedscale .main-container {
+  font-family: "Nunito Sans", sans-serif;
+  padding: 50px 45px; }
+  .p-designedscale .main .left-container {
+    width: 50%; }
+    .p-designedscale .main .left-container .left-image {
+      padding: 0 50px; }
+      .p-designedscale .main .left-container .left-image img {
+        width: 100%;
+        text-align: center; }
+  .p-designedscale .main .right-container {
+    padding: 30px 30px 0 0;
+    width: 50%; }
+    .p-designedscale .main .right-container .right-inner .inner-content {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 0.5px dashed #b4987e;
+      line-height: 48px; }
+      .p-designedscale .main .right-container .right-inner .inner-content h4 {
+        margin: 20px 20px 10px 0;
+        color: #2c5766;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.5;
+        font-family: "Nunito Sans", sans-serif;
+        text-transform: capitalize; }
+      .p-designedscale .main .right-container .right-inner .inner-content p {
+        line-height: 1.8;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 18px;
+        text-align: left;
+        color: #6B6B6B; }
+    .p-designedscale .main .right-container .right-inner .last-content {
+      border-bottom: none; }
+
+.p-certification {
+  padding: 0px 50px 70px; }
+  .p-certification .main {
     width: 100%;
     display: flex;
-    max-width: 1140px; }
-    .p-designedscale .main-container .left-container {
+    justify-content: center;
+    justify-content: space-between; }
+    .p-certification .main .left-certificate {
       width: 50%; }
-      .p-designedscale .main-container .left-container .left-image {
-        padding: 0 50px; }
-        .p-designedscale .main-container .left-container .left-image img {
+      .p-certification .main .left-certificate .left-images {
+        padding: 0 30px; }
+        .p-certification .main .left-certificate .left-images img {
           width: 100%;
           text-align: center; }
-    .p-designedscale .main-container .right-container {
-      padding: 30px 30px 0 0;
-      width: 50%; }
-      .p-designedscale .main-container .right-container .right-inner .inner-content {
-        margin-bottom: 40px;
-        padding-bottom: 40px;
-        border-bottom: 0.5px dashed #b4987e;
-        line-height: 48px; }
-        .p-designedscale .main-container .right-container .right-inner .inner-content h4 {
-          margin: 20px 20px 10px 0;
-          color: #2c5766;
-          font-size: 24px;
-          font-weight: 700;
-          line-height: 1.5;
-          font-family: "Nunito Sans", sans-serif;
-          text-transform: capitalize; }
-        .p-designedscale .main-container .right-container .right-inner .inner-content p {
-          line-height: 1.8;
+    .p-certification .main .right-certificate {
+      width: 50%;
+      padding: 30px 40px; }
+      .p-certification .main .right-certificate .right-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .p-certification .main .right-certificate .right-content .right-image {
+          margin-bottom: 20px;
+          text-align: center; }
+          .p-certification .main .right-certificate .right-content .right-image img {
+            width: 62%; }
+        .p-certification .main .right-certificate .right-content p {
+          margin-bottom: 20px;
+          text-align: center;
           font-family: "Nunito Sans", sans-serif;
           font-size: 18px;
+          color: #6B6B6B;
+          line-height: 1.8; }
+          .p-certification .main .right-certificate .right-content p strong {
+            color: #2571b7; }
+        .p-certification .main .right-certificate .right-content .btn {
+          display: flex;
+          align-items: center; }
+          .p-certification .main .right-certificate .right-content .btn button {
+            text-align: center;
+            border-radius: 6px;
+            color: #fff;
+            padding: 18px 22px;
+            background-image: linear-gradient(to right, #3b7989 51%, #2c5766 100%);
+            font-size: 16px;
+            font-family: "Nunito Sans", sans-serif;
+            border: transparent;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: capitalize;
+            letter-spacing: 0.5px; }
+            .p-certification .main .right-certificate .right-content .btn button span {
+              margin-left: 6px; }
+
+.p-aboutbrand {
+  font-family: "Nunito Sans", sans-serif; }
+  .p-aboutbrand .main-about {
+    background-color: #eee; }
+    .p-aboutbrand .main-about .main-list {
+      cursor: pointer; }
+      .p-aboutbrand .main-about .main-list .heading-title {
+        border-bottom: 1px solid #d4d4d4;
+        line-height: 27px;
+        padding: 25px 20px;
+        font-weight: 700;
+        display: block;
+        padding: 15px 20px;
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Nunito Sans", sans-serif;
+        text-transform: capitalize; }
+        .p-aboutbrand .main-about .main-list .heading-title::after {
+          width: 8px;
+          height: 8px;
+          border: 3px solid #000;
+          transform: rotate(135deg) translateY(50%);
+          border-bottom: none;
+          border-right: none;
+          top: 50%;
+          position: absolute;
+          right: 10px;
+          content: " ";
+          font-weight: 700;
+          transition: all 0.5s ease-in-out; }
+        .p-aboutbrand .main-about .main-list .heading-title::before {
+          display: none; }
+        .p-aboutbrand .main-about .main-list .heading-title.active {
+          border-bottom: none; }
+          .p-aboutbrand .main-about .main-list .heading-title.active::after {
+            border-color: #000;
+            transform: rotate(225deg) translateY(50%); }
+      .p-aboutbrand .main-about .main-list .heading-answer {
+        display: none;
+        margin: 0;
+        text-align: left;
+        padding: 0px 80px; }
+        .p-aboutbrand .main-about .main-list .heading-answer p {
           text-align: left;
+          font-weight: 400;
+          font-family: "Nunito Sans", sans-serif;
+          margin: 0 0 16px;
+          font-size: 16px;
+          line-height: 1.8;
           color: #6B6B6B; }
-      .p-designedscale .main-container .right-container .right-inner .last-content {
-        border-bottom: none; }
+          .p-aboutbrand .main-about .main-list .heading-answer p::after {
+            background-color: #fff; }
+        .p-aboutbrand .main-about .main-list .heading-answer ul {
+          line-height: 2; }
+          .p-aboutbrand .main-about .main-list .heading-answer ul li {
+            font-size: 16px;
+            font-family: "Nunito Sans", sans-serif;
+            color: #6B6B6B;
+            list-style-type: disc; }
+        .p-aboutbrand .main-about .main-list .heading-answer ol li {
+          line-height: 2;
+          font-size: 16px;
+          font-family: "Nunito Sans", sans-serif;
+          color: #6B6B6B;
+          list-style-type: decimal; }
 
 /*# sourceMappingURL=main.css.map */

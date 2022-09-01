@@ -150,8 +150,28 @@ $(function () {
       $(this).closest('.question-list').find('.question-title.active').removeClass('active');
       $(this).addClass('active');
     }
-
     dropDown.stop(false, true).slideToggle();
     j.preventDefault();
   });
 });
+
+
+// about brand
+
+$(function () {
+  $('.heading-title').click(function (j) {
+
+    var dropDown = $(this).closest('.main-list').find('.heading-answer');
+    $(this).closest('.main-about').find('.heading-answer').not(dropDown).slideUp();
+
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+    } else {
+      $(this).closest('.main-about').find('.heading-title.active').removeClass('active');
+      $(this).addClass('active');
+    }
+    dropDown.stop(false, true).slideToggle();
+    j.preventDefault();
+  });
+});
+

@@ -1,14 +1,12 @@
 
-
-
 .p-designedscale{
+    font-family: $nunitofnt;
+    padding: 50px 45px ;
 
-    padding: 50px 45px 80px;
-
-    .main-container{
-        width: 100%;
-        display: flex;
-        max-width: 1140px;
+    .main{
+        // width: 100%;
+        // display: flex;
+        // max-width: 1140px;
         // align-items: center;
 
         .left-container{
@@ -25,7 +23,6 @@
 
         .right-container{
             padding: 30px 30px 0 0;
-
             width: 50%;
 
 
