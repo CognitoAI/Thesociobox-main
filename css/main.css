@@ -108,8 +108,10 @@ ol, ul {
         color: #6B6B6B; }
       .c-topbanner .main-banner .left-banner .started-btn {
         border-radius: 6px;
+        border: transparent;
         color: #fff;
-        padding: 16px 20px;
+        padding: 14px 18px;
+        font-size: 16px;
         background-image: linear-gradient(to right, #3b7989 51%, #2c5766 100%);
         font-weight: 600; }
         .c-topbanner .main-banner .left-banner .started-btn span {
@@ -335,6 +337,65 @@ ol, ul {
         transform: translateY(8px) rotate(45deg); }
       .header .navbar .showMenu .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg); } }
+
+.m-footer {
+  padding: 80px 40px 10px;
+  background-image: linear-gradient(to right, #2c5766 20%, #3b7989 82%, #4b9cad 100%);
+  font-family: "Nunito Sans", sans-serif; }
+  .m-footer ul {
+    display: flex;
+    column-gap: 50px;
+    margin: 0 !important;
+    width: 100%; }
+    .m-footer ul li {
+      width: 100%;
+      padding-right: 10px;
+      display: flex;
+      flex-direction: column; }
+      .m-footer ul li h5 {
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.6;
+        text-transform: capitalize; }
+      .m-footer ul li p {
+        color: #dee1f8;
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.8; }
+      .m-footer ul li .follow-us {
+        display: flex;
+        column-gap: 25px;
+        align-items: center; }
+        .m-footer ul li .follow-us a span {
+          color: #fff;
+          font-size: 26px; }
+      .m-footer ul li:first-child {
+        cursor: pointer; }
+  .m-footer .bottom-border {
+    position: relative;
+    margin: 80px 0 10px 0;
+    border-top: 1px solid #ccc; }
+  .m-footer .lower-footer {
+    text-align: center; }
+    .m-footer .lower-footer a {
+      font-size: 16px; }
+      .m-footer .lower-footer a span {
+        color: #fff; }
+  .m-footer .scroll-btn {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    bottom: 25px;
+    right: 25px; }
+    .m-footer .scroll-btn button {
+      background-color: #8dbfcade;
+      font-size: 26px;
+      border: transparent;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 2px; }
 
 .p-clientLogo {
   padding: 0 0 50px; }
@@ -659,7 +720,7 @@ ol, ul {
           border-right: none;
           top: 50%;
           position: absolute;
-          right: 10px;
+          right: 20px;
           content: " ";
           font-weight: 700;
           transition: all 0.5s ease-in-out; }
@@ -685,6 +746,9 @@ ol, ul {
           color: #6B6B6B; }
           .p-aboutbrand .main-about .main-list .heading-answer p::after {
             background-color: #fff; }
+          .p-aboutbrand .main-about .main-list .heading-answer p:last-child {
+            padding-bottom: 20px;
+            margin-bottom: 0; }
         .p-aboutbrand .main-about .main-list .heading-answer ul {
           line-height: 2; }
           .p-aboutbrand .main-about .main-list .heading-answer ul li {

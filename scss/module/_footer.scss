@@ -1,0 +1,86 @@
+.m-footer{
+    padding: 80px 40px 10px;
+    background-image: linear-gradient(to right, #2c5766 20%, #3b7989 82%, #4b9cad 100%);
+    font-family: $nunitofnt;
+
+    ul{
+        display: flex;
+        column-gap: 50px;
+        margin: 0 !important;
+        // flex-wrap: wrap;
+        width: 100%;
+        li{
+            width: 100%;
+            padding-right: 10px;
+            display: flex;
+            // color: #fff;
+            // align-items: center;
+            flex-direction: column;
+
+            h5{
+                margin-bottom: 20px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 1.6;
+                // font-family: 'Nunito Sans',sans-serif;
+                text-transform: capitalize;
+            }
+            p{
+                color: #dee1f8;
+                font-size: 16px;
+                text-align: left;
+                line-height: 1.8;
+            }
+            .follow-us{
+                display: flex;
+                column-gap: 25px;
+                align-items: center;
+                // justify-content: center;
+
+                a{
+                    span{
+                        color: #fff;
+                        font-size:  26px;
+                    }
+                }
+            }
+
+            &:first-child{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .bottom-border{
+        position: relative;
+        margin: 80px 0 10px 0;
+        border-top: 1px solid #ccc;
+    }
+    .lower-footer{
+        text-align: center;
+        a{
+            font-size: 16px;
+            span{
+                color: #fff;
+                
+            }
+        }
+    }
+    .scroll-btn{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        button{
+            background-color: #8dbfcade;
+            font-size: 26px;
+            border: transparent;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 2px;
+        }
+    }
+
+}
