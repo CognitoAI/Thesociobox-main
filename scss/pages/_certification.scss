@@ -44,7 +44,9 @@
                .btn{
                 display: flex;
                 align-items: center;
+            
                 button{
+                    cursor: pointer;
                     text-align: center;
                     border-radius: 6px;
                     color: #fff;
@@ -57,6 +59,14 @@
                     line-height: 1;
                     text-transform: capitalize;
                     letter-spacing: 0.5px;
+                    transition: all 0.3s linear;
+             
+                 
+                    &:hover{
+                        transform: translateY(-8px);
+                    
+                    }
+
                     span{
                         margin-left: 6px;
                     }

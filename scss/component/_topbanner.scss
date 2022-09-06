@@ -29,12 +29,18 @@
             }
             .started-btn{
                 border-radius: 6px;
+                cursor: pointer;
                 border: transparent;
                 color: #fff;
                 padding: 14px 18px;
                 font-size: 16px;
                 background-image: linear-gradient(to right, #3b7989 51%, #2c5766 100%);
                 font-weight: 600;
+
+                &:hover{
+                  transition: all 0.2s linear;
+                  transform: scale(1.1);
+                }
                 span{
                     margin-left: 10px;
                 }

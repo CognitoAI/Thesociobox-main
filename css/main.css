@@ -108,12 +108,16 @@ ol, ul {
         color: #6B6B6B; }
       .c-topbanner .main-banner .left-banner .started-btn {
         border-radius: 6px;
+        cursor: pointer;
         border: transparent;
         color: #fff;
         padding: 14px 18px;
         font-size: 16px;
         background-image: linear-gradient(to right, #3b7989 51%, #2c5766 100%);
         font-weight: 600; }
+        .c-topbanner .main-banner .left-banner .started-btn:hover {
+          transition: all 0.2s linear;
+          transform: scale(1.1); }
         .c-topbanner .main-banner .left-banner .started-btn span {
           margin-left: 10px; }
     .c-topbanner .main-banner .right-banner {
@@ -226,13 +230,17 @@ ol, ul {
       color: #fff;
       font-size: 18px;
       text-transform: capitalize;
+      cursor: pointer;
       background-image: linear-gradient(to left, #4b9cad 15%, #1d3543 100%);
       padding: 14px 20px;
       border-radius: 6px;
       border: none;
       font-family: "Nunito Sans", sans-serif;
       font-weight: 600;
-      letter-spacing: 0.5px; }
+      letter-spacing: 0.5px;
+      transition: all 0.3s linear; }
+      .marketing-solution .container .campaign-btn button:hover {
+        transform: translateY(-8px); }
       .marketing-solution .container .campaign-btn button span {
         margin-left: 10px;
         font-size: 20px; }
@@ -269,7 +277,8 @@ ol, ul {
     .header .navbar .nav-menu {
       display: flex;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      margin: 0; }
       @media (max-width: 540px) {
         .header .navbar .nav-menu {
           position: fixed;
@@ -302,6 +311,9 @@ ol, ul {
             font-weight: 600; }
             .header .navbar .nav-menu .nav-item:last-child a:hover {
               color: #fff; }
+        .header .navbar .nav-menu .nav-item:hover {
+          transition: all 0.2s linear;
+          transform: scale(1.1); }
     .header .navbar .showMenu {
       left: 0;
       animation: smallbig 0.6s forwards;
@@ -390,6 +402,7 @@ ol, ul {
     bottom: 25px;
     right: 25px; }
     .m-footer .scroll-btn button {
+      cursor: pointer;
       background-color: #8dbfcade;
       font-size: 26px;
       border: transparent;
@@ -453,6 +466,7 @@ ol, ul {
     padding: 20px;
     width: 30%; }
     .p-scale .btn .btn-campaign {
+      cursor: pointer;
       background-color: #fff !important;
       color: #2c5766;
       font-size: 18px;
@@ -461,7 +475,10 @@ ol, ul {
       border-radius: 6px;
       border: none;
       font-family: "Nunito Sans", sans-serif;
-      font-weight: 600; }
+      font-weight: 600;
+      transition: all 0.3s linear; }
+      .p-scale .btn .btn-campaign:hover {
+        transform: translateY(-8px); }
       .p-scale .btn .btn-campaign span {
         margin-left: 10px;
         font-size: 20px; }
@@ -540,6 +557,7 @@ ol, ul {
         .p-contact-form .container .right-container .right-inner form .next-btn {
           margin: 30px 0; }
           .p-contact-form .container .right-container .right-inner form .next-btn button {
+            cursor: pointer;
             color: #fff;
             background-color: #2c5766;
             border-radius: 6px;
@@ -549,6 +567,8 @@ ol, ul {
             font-size: 16px;
             padding: 12px 18px;
             font-weight: 700; }
+            .p-contact-form .container .right-container .right-inner form .next-btn button:hover {
+              color: #dee1f8; }
 
 .p-question {
   padding: 80px 50px;
@@ -678,6 +698,7 @@ ol, ul {
           display: flex;
           align-items: center; }
           .p-certification .main .right-certificate .right-content .btn button {
+            cursor: pointer;
             text-align: center;
             border-radius: 6px;
             color: #fff;
@@ -689,7 +710,10 @@ ol, ul {
             font-weight: 700;
             line-height: 1;
             text-transform: capitalize;
-            letter-spacing: 0.5px; }
+            letter-spacing: 0.5px;
+            transition: all 0.3s linear; }
+            .p-certification .main .right-certificate .right-content .btn button:hover {
+              transform: translateY(-8px); }
             .p-certification .main .right-certificate .right-content .btn button span {
               margin-left: 6px; }
 

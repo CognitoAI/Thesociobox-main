@@ -68,12 +68,14 @@
         }
     }
     .scroll-btn{
+      
         display: flex;
         justify-content: right;
         position: fixed;
         bottom: 25px;
         right: 25px;
         button{
+            cursor: pointer;
             background-color: #8dbfcade;
             font-size: 26px;
             border: transparent;

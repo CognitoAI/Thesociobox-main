@@ -25,6 +25,7 @@
         width: 30%;
     
         .btn-campaign{
+            cursor: pointer;
             background-color: #fff !important;
             color:#2c5766;
             font-size: 18px;
@@ -34,6 +35,12 @@
             border: none;
             font-family: $nunitofnt;
             font-weight: 600;
+            transition: all 0.3s linear;
+            &:hover{
+                transform: translateY(-8px);
+            
+           
+            }
             // letter-spacing: 0.5px;
         
 
