@@ -219,7 +219,11 @@ ol, ul {
         text-transform: capitalize;
         letter-spacing: 0.5px;
         text-align: center;
-        border-radius: 6px; }
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s linear; }
+        .marketing-solution .container .c-cardbox .cardbox-detail li .know-btn:hover {
+          transform: translateY(-8px); }
   .marketing-solution .container .campaign-btn {
     padding: 50px 0 0;
     width: 100%;
