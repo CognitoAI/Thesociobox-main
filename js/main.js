@@ -19,13 +19,10 @@ function mobileMenu() {
 }
 
 // close toggle
-
-
 function closeMenu() {
     hamburger.classList.remove("showMenu");
     navMenu.classList.remove("showMenu");
 }
-
 
 
 
@@ -83,6 +80,7 @@ $(document).ready(function(){
   });
   
 
+
 // client carousel
 $(document).ready(function(){
   
@@ -137,7 +135,7 @@ $(document).ready(function(){
 });
 
 
-// faqs
+// faqs question section
 $(function () {
   $('.question-title').click(function (j) {
 
@@ -156,8 +154,7 @@ $(function () {
 });
 
 
-// about brand
-
+// about brand details page
 $(function () {
   $('.heading-title').click(function (j) {
 
@@ -177,32 +174,49 @@ $(function () {
 
 
 
-//Get the button
-var mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
+//Get the button scroll up button function
+// var mybutton = document.getElementById("myBtn");
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-    // mybutton.css("opacity", "1");
-  } else {
-    mybutton.style.display = "none" ;
-    // mybutton.css("opacity", "0");
-  }
-}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     mybutton.style.display = "block";
+//     // mybutton.css("opacity", "1");
+//   } else {
+//     mybutton.style.display = "none" ;
+//     // mybutton.css("opacity", "0");
+//   }
+// }
+
+
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  // document.body.scrollTop = 0;
-  // document.documentElement.scrollTop = 0;
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1000);
-    return false;
-}
+// function topFunction() {
+//   // document.body.scrollTop = 0;
+//   // document.documentElement.scrollTop = 0;
+//     $('html, body').animate({
+//       scrollTop: 0
+//     }, 1000);
+//     return false;
+// }
+
+$(document).ready(function(){ 
+  $(window).scroll(function(){ 
+      if ($(this).scrollTop() > 100) { 
+          $('#myBtn').fadeIn(); 
+      } else { 
+          $('#myBtn').fadeOut(); 
+      } 
+  }); 
+  $('#myBtn').click(function(){ 
+      $("html, body").animate({ scrollTop: 0 }, 600); 
+      return false; 
+  }); 
+});
 
 
-// start btn 
+
+// start btn to form page animation
 $("#startbtn").click(function() {
   $('html, body').animate({
       scrollTop: $("#form-page").offset().top
@@ -210,16 +224,62 @@ $("#startbtn").click(function() {
 });
 
 
-// start btn 
+// campaign btn to form page animation
 $("#campaign-btn").click(function() {
   $('html, body').animate({
       scrollTop: $("#form-page").offset().top
   }, 800);
 });
 
-// start btn campaign
+// camapaign start btn to form campaign
 $("#campaign-start").click(function() {
   $('html, body').animate({
       scrollTop: $("#form-page").offset().top
   }, 800);
 });
+
+
+
+// // scroll to top progress bar
+window.onscroll = function() {progressBaar()};
+
+function progressBaar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+const showOnPx = 100;
+const backToTopButton = document.querySelector("#myBtn");
+const pageProgressBar = document.querySelector(".progress-bar");
+
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+
+const goToTop = () => {
+  document.body.scrollIntoView({
+    behavior: "smooth"
+  });
+};
+
+document.addEventListener("scroll", () => {
+  console.log("Scroll Height: ", scrollContainer().scrollHeight);
+  console.log("Client Height: ", scrollContainer().clientHeight);
+
+  const scrolledPercentage =
+    (scrollContainer().scrollTop /
+      (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
+    100;
+
+  pageProgressBar.style.width = `${scrolledPercentage}%`;
+
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("hidden");
+  } else {
+    backToTopButton.classList.add("hidden");
+  }
+});
+
+backToTopButton.addEventListener("click", goToTop);

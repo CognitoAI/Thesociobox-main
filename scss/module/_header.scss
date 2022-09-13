@@ -2,13 +2,24 @@
     border-bottom: 1px solid #E2E8F0;
     width: 100%;
     display: flex;
-   justify-content: space-between;
-   // height:75px;
-   background-color: #fcfcfc;
-   position: fixed;
+    justify-content: space-between;
+   height:70px;
+     background-color: #fcfcfc;
+    position: fixed;
     z-index: 99;
+
+    .progress-bar{
+        height: 4px;
+        // background: #3b7989;
+        background-image: linear-gradient(to left, #8dbfca 15%, #3b7989 100%);
+        position: fixed;
+        top: 9%;
+        left: 0;
+    
+       }
    
     .nav-logo{
+        position: relative;
        
      display: flex;
      align-items: center;
@@ -29,13 +40,12 @@
        }
    }
     .navbar {
+        position:relative;
        display: flex;
        justify-content: space-between;
        align-items: center;
        padding: 14px 24px;
 
-       
-      
        .nav-menu {
            display: flex;
            justify-content: space-between;
@@ -58,9 +68,6 @@
                   
            }
               
-           
-           
-
            .nav-item {
                margin-left: 60px;
            
@@ -83,8 +90,6 @@
                     
                    }
                  
-
-
                }
 
                &:last-child{
@@ -111,6 +116,7 @@
            }
 
        }
+
        .showMenu{
            // transform: translateY(0);
            left: 0;
@@ -155,7 +161,6 @@
            //     }
            // }
 
-
            .bar{
                display: block;
                width: 25px;
@@ -165,16 +170,8 @@
                transition: all 0.3s ease-in-out;
                background-color: #3b7989;
 
-               
-   
-
            }
-
-           
-
-
-
-          
+        
        }
 
        
@@ -201,5 +198,17 @@
 
        }
    }
+
+//    .progress-bar{
+//     height: 1rem;
+//     background: #3b7989;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+
+//    }
+  
+  
+  
    
   }

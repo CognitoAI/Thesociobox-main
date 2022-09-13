@@ -85,6 +85,13 @@ ol, ul {
   justify-content: center;
   justify-content: space-between; }
 
+.progress-bar {
+  height: 4px;
+  background-image: linear-gradient(to left, #8dbfca 15%, #3b7989 100%);
+  position: fixed;
+  top: 10%;
+  left: 0; }
+
 .c-topbanner {
   padding: 120px 0 50px;
   transition: .3s,border .3s,border-radius .3s,box-shadow .3s; }
@@ -170,94 +177,139 @@ ol, ul {
 .marketing-solution {
   padding: 50px 0;
   background-color: #f5f5f5; }
-  .marketing-solution .container .c-cardbox p {
-    margin-bottom: 16px;
-    font-size: 18px;
-    font-family: "Nunito Sans", sans-serif;
-    text-align: center;
-    color: #6B6B6B;
-    font-weight: 500; }
-  .marketing-solution .container .c-cardbox .cardbox-detail {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 50px; }
-    .marketing-solution .container .c-cardbox .cardbox-detail li {
-      padding: 0 40px 0 0;
-      width: 33.33%;
-      display: flex;
-      align-items: center;
-      flex-direction: column; }
-      .marketing-solution .container .c-cardbox .cardbox-detail li .card-img {
-        margin-bottom: 10px; }
-        .marketing-solution .container .c-cardbox .cardbox-detail li .card-img a img {
-          height: 250px;
-          width: 100%;
-          object-fit: contain; }
-      .marketing-solution .container .c-cardbox .cardbox-detail li h4 {
-        text-align: center;
-        color: #3c7385;
-        font-size: 24px;
-        font-family: "Nunito Sans", sans-serif;
-        text-transform: capitalize;
-        font-weight: 700;
-        margin-bottom: 10px; }
-      .marketing-solution .container .c-cardbox .cardbox-detail li p {
-        margin-bottom: 20px;
-        text-align: center;
-        font-size: 18px;
-        font-family: "Nunito Sans", sans-serif;
-        color: #6B6B6B;
-        font-weight: 500; }
-      .marketing-solution .container .c-cardbox .cardbox-detail li .know-btn {
-        font-weight: 600;
-        color: #000;
-        background-color: #ffc838;
-        padding: 14px 20px;
-        font-size: 16px;
-        line-height: 1;
-        font-family: "Nunito Sans", sans-serif;
-        text-transform: capitalize;
-        letter-spacing: 0.5px;
-        text-align: center;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: all 0.3s linear; }
-        .marketing-solution .container .c-cardbox .cardbox-detail li .know-btn:hover {
-          transform: translateY(-8px); }
-  .marketing-solution .container .campaign-btn {
-    padding: 50px 0 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .marketing-solution .container .campaign-btn button {
-      color: #fff;
+  .marketing-solution .container {
+    width: 100% !important;
+    max-width: 1440px; }
+    .marketing-solution .container .c-cardbox p {
+      margin-bottom: 16px;
       font-size: 18px;
-      text-transform: capitalize;
-      cursor: pointer;
-      background-image: linear-gradient(to left, #4b9cad 15%, #1d3543 100%);
-      padding: 14px 20px;
-      border-radius: 6px;
-      border: none;
       font-family: "Nunito Sans", sans-serif;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      transition: all 0.3s linear; }
-      .marketing-solution .container .campaign-btn button:hover {
-        transform: translateY(-8px); }
-      .marketing-solution .container .campaign-btn button span {
-        margin-left: 10px;
-        font-size: 20px; }
+      text-align: center;
+      color: #6B6B6B;
+      font-weight: 500; }
+    .marketing-solution .container .c-cardbox .cardbox-detail {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 50px; }
+      .marketing-solution .container .c-cardbox .cardbox-detail li {
+        padding: 0 40px 0 0;
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .marketing-solution .container .c-cardbox .cardbox-detail li .card-img {
+          margin-bottom: 10px; }
+          .marketing-solution .container .c-cardbox .cardbox-detail li .card-img a img {
+            height: 250px;
+            width: 100%;
+            object-fit: contain; }
+        .marketing-solution .container .c-cardbox .cardbox-detail li h4 {
+          text-align: center;
+          color: #3c7385;
+          font-size: 24px;
+          font-family: "Nunito Sans", sans-serif;
+          text-transform: capitalize;
+          font-weight: 700;
+          margin-bottom: 10px; }
+        .marketing-solution .container .c-cardbox .cardbox-detail li p {
+          margin-bottom: 20px;
+          text-align: center;
+          font-size: 18px;
+          font-family: "Nunito Sans", sans-serif;
+          color: #6B6B6B;
+          font-weight: 500; }
+        .marketing-solution .container .c-cardbox .cardbox-detail li .know-btn {
+          font-weight: 600;
+          color: #000;
+          background-color: #ffc838;
+          padding: 14px 20px;
+          font-size: 16px;
+          line-height: 1;
+          font-family: "Nunito Sans", sans-serif;
+          text-transform: capitalize;
+          letter-spacing: 0.5px;
+          text-align: center;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 0.3s linear; }
+          .marketing-solution .container .c-cardbox .cardbox-detail li .know-btn:hover {
+            transform: translateY(-8px); }
+    .marketing-solution .container .campaign-btn {
+      padding: 50px 0 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .marketing-solution .container .campaign-btn button {
+        color: #fff;
+        font-size: 18px;
+        text-transform: capitalize;
+        cursor: pointer;
+        background-image: linear-gradient(to left, #4b9cad 15%, #1d3543 100%);
+        padding: 14px 20px;
+        border-radius: 6px;
+        border: none;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: all 0.3s linear; }
+        .marketing-solution .container .campaign-btn button:hover {
+          transform: translateY(-8px); }
+        .marketing-solution .container .campaign-btn button span {
+          margin-left: 10px;
+          font-size: 20px; }
+
+.c-aboutus {
+  background-image: url("/images/about-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 80px 0;
+  padding: 160px 40px 104px;
+  font-family: "Nunito Sans", sans-serif; }
+  .c-aboutus .inner-section {
+    background-color: #000c2d;
+    opacity: .5;
+    transition: .3s,border-radius .3s,opacity .3s;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 0 0 80px 0; }
+  .c-aboutus .banner-content {
+    z-index: 999; }
+    .c-aboutus .banner-content h1 {
+      color: #fff;
+      font-size: 64px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: capitalize;
+      text-align: center;
+      margin-bottom: 20px; }
+    .c-aboutus .banner-content p {
+      margin-bottom: 18px;
+      text-align: center;
+      color: #dee1f8;
+      font-size: 18px;
+      text-align: center; }
 
 .header {
   border-bottom: 1px solid #E2E8F0;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 70px;
   background-color: #fcfcfc;
   position: fixed;
   z-index: 99; }
+  .header .progress-bar {
+    height: 4px;
+    background-image: linear-gradient(to left, #8dbfca 15%, #3b7989 100%);
+    position: fixed;
+    top: 9%;
+    left: 0; }
   .header .nav-logo {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 10px 8px; }
@@ -274,6 +326,7 @@ ol, ul {
           margin-left: 6px;
           font-size: 18px; } }
   .header .navbar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -357,7 +410,8 @@ ol, ul {
 .m-footer {
   padding: 80px 40px 10px;
   background-image: linear-gradient(to right, #2c5766 20%, #3b7989 82%, #4b9cad 100%);
-  font-family: "Nunito Sans", sans-serif; }
+  font-family: "Nunito Sans", sans-serif;
+  padding: 80px 40px 10px; }
   .m-footer ul {
     display: flex;
     column-gap: 50px;
@@ -385,13 +439,36 @@ ol, ul {
         column-gap: 25px;
         align-items: center; }
         .m-footer ul li .follow-us a span {
-          color: #fff;
-          font-size: 26px; }
+          color: #fff !important;
+          font-size: 26px;
+          background: transparent; }
+          .m-footer ul li .follow-us a span .fa.fa.fa-instagram {
+            border-radius: 50%;
+            padding: 10px 11px; }
+            .m-footer ul li .follow-us a span .fa.fa.fa-instagram:hover {
+              color: #fff !important;
+              background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+              transition: linear 0.3s; }
+          .m-footer ul li .follow-us a span .fa.fa.fa-facebook {
+            border-radius: 50%;
+            padding: 10px 14px; }
+            .m-footer ul li .follow-us a span .fa.fa.fa-facebook:hover {
+              color: #fff !important;
+              background-color: #285AEB;
+              transition: linear 0.3s; }
+          .m-footer ul li .follow-us a span .fa.fa.fa-linkedin-square {
+            border-radius: 50%;
+            padding: 10px 13px; }
+            .m-footer ul li .follow-us a span .fa.fa.fa-linkedin-square:hover {
+              color: #fff !important;
+              background-color: #0077b5 !important;
+              transition: linear 0.3s; }
       .m-footer ul li:first-child {
         cursor: pointer; }
   .m-footer .bottom-border {
+    display: flex;
     position: relative;
-    margin: 80px 0 10px 0;
+    margin: 80px 20px 10px 0px;
     border-top: 1px solid #ccc; }
   .m-footer .lower-footer {
     text-align: center; }
@@ -412,7 +489,8 @@ ol, ul {
       border: transparent;
       color: #fff;
       padding: 2px 8px;
-      border-radius: 2px; }
+      border-radius: 2px;
+      transition: background-color .3s,  opacity .5s, visibility .5s; }
 
 .p-clientLogo {
   padding: 0 0 50px; }
