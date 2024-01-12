@@ -120,7 +120,7 @@ ol, ul {
         color: #fff;
         padding: 14px 18px;
         font-size: 16px;
-        background-image: linear-gradient(to right, #3b7989 51%, #2c5766 100%);
+        background-image: linear-gradient(to right, #b552ea 10%, #ffdc09 100%);
         font-weight: 600; }
         .c-topbanner .main-banner .left-banner .started-btn:hover {
           transition: all 0.2s linear;
