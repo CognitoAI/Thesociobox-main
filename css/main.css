@@ -549,7 +549,7 @@ ol, ul {
     width: 30%; }
     .p-scale .btn .btn-campaign {
       cursor: pointer;
-      background-color: linear-gradient(to left, #3b7989 11%, #2c5766 100%);
+      background-color: linear-gradient(to right, #b552ea 10%, #ffdc09 100%);
       color: #2c5766;
       font-size: 18px;
       text-transform: capitalize;
