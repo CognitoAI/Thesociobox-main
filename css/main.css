@@ -596,11 +596,11 @@ ol, ul {
     .p-contact-form .container .right-container .right-inner {
       padding: 30px;
       border-radius: 15px;
-      background-color: #ffc838; }
+      background: radial-gradient(circle at center, #b552ea 40%, #ffdc09 100%) }
       .p-contact-form .container .right-container .right-inner h2 {
-        color: #3c7385;
+        color: #fff;
         text-align: center;
-        font-size: 24px;
+        font-size: 24px;  
         font-family: "Nunito Sans", sans-serif;
         line-height: 1.2;
         text-transform: capitalize;
