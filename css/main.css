@@ -409,7 +409,7 @@ ol, ul {
 
 .m-footer {
   padding: 80px 40px 10px;
-  background-image: linear-gradient(to right, #b552ea 5%, #ffdc09 100%);
+  background-image: linear-gradient(to right, #b552ea 40%, #ffdc09 100%);
   font-family: "Nunito Sans", sans-serif;
   padding: 80px 40px 10px; }
   .m-footer ul {
@@ -566,7 +566,7 @@ ol, ul {
         font-size: 20px; }
 
 .p-contact-form {
-  background-color: #2c5766;
+  background: linear-gradient(to right, #b552ea 10%, #ffdc09 100%);
   font-family: "Nunito Sans", sans-serif;
   padding: 80px 0 !important; }
   .p-contact-form .container {
