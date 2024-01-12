@@ -294,7 +294,7 @@ ol, ul {
       text-align: center; }
 
 .header {
-  border-bottom: 1px solid #E2E8F0;
+  border-bottom: 1px #ffdc09;
   width: 100%;
   display: flex;
   justify-content: space-between;
