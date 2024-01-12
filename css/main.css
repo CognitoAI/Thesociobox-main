@@ -245,7 +245,7 @@ ol, ul {
         font-size: 18px;
         text-transform: capitalize;
         cursor: pointer;
-        background-image: linear-gradient(to left, #4b9cad 15%, #1d3543 100%);
+        background-image: linear-gradient(to right, #b552ea 10%, #ffdc09 100%);
         padding: 14px 20px;
         border-radius: 6px;
         border: none;
@@ -360,7 +360,7 @@ ol, ul {
           .header .navbar .nav-menu .nav-item .nav-link:hover {
             color: #3b7989; }
         .header .navbar .nav-menu .nav-item:last-child {
-          background-image: linear-gradient(to right, #2c5766 0%, #3b7989 51%, #4b9cad 100%);
+          background-image: linear-gradient(to right, #b552ea 10%, #ffdc09 100%);
           border-radius: 6px;
           padding: 6px 12px; }
           .header .navbar .nav-menu .nav-item:last-child a {
@@ -549,7 +549,7 @@ ol, ul {
     width: 30%; }
     .p-scale .btn .btn-campaign {
       cursor: pointer;
-      background-color: #fff !important;
+      background-color: linear-gradient(to left, #3b7989 11%, #2c5766 100%);
       color: #2c5766;
       font-size: 18px;
       text-transform: capitalize;
