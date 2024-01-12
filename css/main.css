@@ -294,7 +294,7 @@ ol, ul {
       text-align: center; }
 
 .header {
-  border-bottom: 1px #ffdc09;
+  border-bottom: 1px solid #ffdc09;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -409,7 +409,7 @@ ol, ul {
 
 .m-footer {
   padding: 80px 40px 10px;
-  background-image: linear-gradient(to right, #2c5766 20%, #3b7989 82%, #4b9cad 100%);
+  background-image: linear-gradient(to right, #b552ea 5%, #ffdc09 100%);
   font-family: "Nunito Sans", sans-serif;
   padding: 80px 40px 10px; }
   .m-footer ul {
